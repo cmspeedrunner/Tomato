@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/109184310/227681329-6b8cb38f-d7ec-4504-a349-d0faf247faae.png)
 # TomatoScript
 TomatoScript is a dynamically typed programming language specialised in automating tasks with simple and concise syntax.
 ## Getting Started
