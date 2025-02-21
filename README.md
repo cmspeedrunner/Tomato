@@ -153,7 +153,7 @@ You can format your code all in a single line using a semi-colon. Here is an exa
  hotkey("win", "r"); wait(0.3); keyboard("notepad", 0.01); key("enter"); wait(0.75); keyboard("Hello, World!")
 ```
 You can also define arrays and there is an inbuilt color system, but, i want to get to sleep , so, i'll leave you with a final example miniproject! It is a program which takes a refresh buffer (float type) input fromt he user, and then outputs the mouse coordinates infinitely.<br>
-```
+```python
 fn outputBoundsMouse()
     
     println(col_blue+"You are "+col_green+str(getboundsx()-getmousex())+col_blue+"pxs away from the right side of your screen.")
