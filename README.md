@@ -152,4 +152,26 @@ You can format your code all in a single line using a semi-colon. Here is an exa
 ```python
  hotkey("win", "r"); wait(0.3); keyboard("notepad", 0.01); key("enter"); wait(0.75); keyboard("Hello, World!")
 ```
-You can also define arrays and colors, but, i want to get to sleep , so, i'll leave you with a final example miniproject! It is a program which takes a refresh buffer (float type) input fromt he user, and then outputs the mouse coordingates forever
+You can also define arrays and there is an inbuilt color system, but, i want to get to sleep , so, i'll leave you with a final example miniproject! It is a program which takes a refresh buffer (float type) input fromt he user, and then outputs the mouse coordinates infinitely.<br>
+```
+fn outputBoundsMouse()
+    
+    println(col_blue+"You are "+col_green+str(getboundsx()-getmousex())+col_blue+"pxs away from the right side of your screen.")
+    println("You are "+col_green+str(getmousex())+col_blue+"pxs away from the left side of your screen."+col_reset)
+    println(col_purple+"-------------------------------"+col_blue)
+    println("You are "+col_green+str(getboundsy()-getmousey())+col_blue+"pxs away from the bottom of your screen.")
+    println("You are "+col_green+str(getmousey())+col_blue+"pxs away from the top of your screen."+col_reset)
+end
+
+let refresh = float(read("Enter refresh speed (seconds)"))
+
+while True then
+    outputBoundsMouse()
+    wait(refresh)
+    cmd("cls")
+end
+```
+
+## Running the code
+To run the code, invoke run.py like this:
+`py run.py main.tmo`
