@@ -6,19 +6,13 @@ import time
 import datetime
 
 
-
-#######################################
-# CONSTANTS
-#######################################
+#TomatoScript consts
 
 DIGITS = '0123456789'
 LETTERS = string.ascii_letters
 LETTERS_DIGITS = LETTERS + DIGITS
 
-#######################################
-# ERRORS
-#######################################
-
+#Make error class
 class Error:
   def __init__(self, pos_start, pos_end, error_name, details):
     self.pos_start = pos_start
@@ -185,7 +179,7 @@ class Lexer:
     while self.current_char != None:
       if self.current_char in ' \t':
         self.advance()
-      elif self.current_char == '|':
+      elif self.current_char == '>':
         self.skip_comment()
       elif self.current_char in ';\n':
         tokens.append(Token(TT_NEWLINE, pos_start=self.pos))
