@@ -108,8 +108,8 @@ Here are some general system and flow tools:
 ```python
 cmd("echo hello") # Passes a command to the command line
 msg("Hello, World!") # Messages the user with a system message, can also be done through the cmd tool.
-fopen("Hello.txt") # Open a file, if it doesnt exist, it is created
-fwrite("Hello, World!","Hello.txt") # Appends to the end of a file.
+fopen("Hello.txt") # Open a file and read the content in one function.
+fwrite("Hello, World!","Hello.txt") # Writes to a file, if the file doesnt exist, it is created.
 wait(1) # Waits 1 second
 let xbounds = getboundsx() # Gets the x resolution of the screen
 let ybounds = getboundsy() # Gets the y resolution of the screen
