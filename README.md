@@ -175,3 +175,13 @@ end
 ## Running the code
 To run the code, invoke run.py like this:
 `py run.py main.tmo`
+You can also output the speed of the code by using the -s flag:
+`py run.py main.tmo -s`
+## Whats next?
+I am going to continue to update the interpreter, add more scripting abillities, a website and hopefully a rewrite in c. Here is a full list of things I would like to do with this project.<br>
+<ul>
+  <li>Create GUI text editor/ide</li>
+  <li>Create Website</li>
+  <li>Rewrite in C</li>
+  <li>Write shell interpreter</li>
+</ul>
