@@ -1,0 +1,10 @@
+fn openApp(name)
+    hotkey("win", "r")
+    wait(0.2)
+    keyboard(name, 0.0)
+    key("enter")
+    wait(0.5)
+    keyboard("This was opened with a function in tomatoscript!", 0.01)
+end
+
+openApp("notepad")

@@ -1,0 +1,16 @@
+fn outputBoundsMouse()
+    
+    println(col_blue+"You are "+col_green+str(getboundsx()-getmousex())+col_blue+"pxs away from the right side of your screen.")
+    println("You are "+col_green+str(getmousex())+col_blue+"pxs away from the left side of your screen."+col_reset)
+    println(col_purple+"-------------------------------"+col_blue)
+    println("You are "+col_green+str(getboundsy()-getmousey())+col_blue+"pxs away from the bottom of your screen.")
+    println("You are "+col_green+str(getmousey())+col_blue+"pxs away from the top of your screen."+col_reset)
+end
+
+let refresh = float(read("Enter refresh speed (seconds)"))
+
+while True then
+    outputBoundsMouse()
+    wait(refresh)
+    cmd("cls")
+end
